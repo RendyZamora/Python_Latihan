@@ -1,1 +1,60 @@
 
+            a{
+                padding: 4px;
+                text-decoration: none;
+            }
+            a.pencet:hover{
+                color: red;
+                text-decoration: underline;
+
+            }
+            h2{
+              color: blue;
+            }
+            body{
+                background-color: whitesmoke; 
+            }
+            .luar{
+            margin: 0;
+            flex-direction: column;
+            height: 100vh;                 /* penuh tinggi layar */
+            display: flex;     
+            margin-top: 50px;
+            align-items: center;       
+            }
+        .utama{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            width: 400px ;
+            padding: 10px;
+        }
+        .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        }
+
+        .form-group label {
+        display: inline-block;
+        width: 120px;   /* pastikan semua label punya lebar sama */
+        font-weight: bold;
+        }
+
+        .form-group input {
+        flex: 1;         /* isi sisa ruang */
+        padding: 5px;
+        box-sizing: border-box;
+        }
+
+        .utama button {
+        padding: 6px 30px;
+        margin-right: 63px;
+        align-self: center;
+        }
+
+        div.berita{
+            width: 400px;
+            padding: 10px;
+            
+        }

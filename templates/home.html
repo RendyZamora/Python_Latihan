@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Halaman {{ halaman }}</title>
+    </head>
+    <body>
+        <h2>Selamat datang di Web Hitung Usia </h2>
+       <a href="/about">Coba Sekarang</a>
+
+       <p>Halaman berita </p>
+       <ul>
+        {% for h in berita %}
+            <li>{{ h }}</li>
+        {% endfor %}
+        </ul>
+
+
+  
+    </body>
+
+
+</html>

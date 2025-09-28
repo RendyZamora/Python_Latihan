@@ -1,0 +1,95 @@
+<html>
+    <head>
+        
+        <style>
+            a{
+                padding: 4px;
+                text-decoration: none;
+            }
+            a.pencet:hover{
+                color: red;
+                text-decoration: underline;
+
+            }
+            h2{
+              color: blue;
+            }
+            body{
+                background-color: whitesmoke; 
+            }
+            .luar{
+            margin: 0;
+            flex-direction: column;
+            height: 100vh;                 /* penuh tinggi layar */
+            display: flex;     
+            margin-top: 50px;
+            align-items: center;       
+            }
+        .utama{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            width: 400px ;
+            padding: 10px;
+        }
+        .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        }
+
+        .form-group label {
+        display: inline-block;
+        width: 120px;   /* pastikan semua label punya lebar sama */
+        font-weight: bold;
+        }
+
+        .form-group input {
+        flex: 1;         /* isi sisa ruang */
+        padding: 5px;
+        box-sizing: border-box;
+        }
+
+        .utama button {
+        padding: 6px 30px;
+        margin-right: 63px;
+        align-self: center;
+        }
+
+        div.berita{
+            width: 400px;
+            padding: 10px;
+            
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="luar">
+            <h2>Hitung Usia Anda Di Halaman ini</h2>
+            <form method="post" action="/about">
+                <div class="utama">
+                    <div class="form-group">
+                        <label for="name" >Name :</label>
+                        <input type="text" id="name" name="nama" placeholder="masukan nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age :</label>
+                        <input type="number" id="age" name="usia" placeholder="masukan tahun lahir">
+                    </div>
+                    <button type="submit">Hitung</button>
+                </div>
+            </form>
+            {% if usia is not none %}
+            <p>Selamat {{ nama }}, Usia anda sekarang adalah {{ usia }} tahun</p>
+            {% endif %}
+            
+            
+            <div class="berita" style="background-color:grey; color: white;">{{ ai_hasil }}</div>
+            <a class="pencet" href="/" style="color: blue;">kembali</a>
+            
+        </div>
+
+    </body>
+
+</html>
